@@ -1,0 +1,50 @@
+{
+  "fact_rows": 166216,
+  "dates": 12,
+  "date_min": "2014-01-01",
+  "date_max": "2014-12-01",
+  "fact_nulls": 0,
+  "exact_duplicates": 0,
+  "negative_rows": 9810,
+  "zero_rows": 9801,
+  "xlsx_rows_match": true,
+  "xlsx_unscaled_total_match": true,
+  "model_scale": 0.3,
+  "joins": {
+    "Business Area": {
+      "dimension_rows": 7,
+      "used_members": 7,
+      "unmatched_rows": 0
+    },
+    "Cost Element": {
+      "dimension_rows": 253,
+      "used_members": 240,
+      "unmatched_rows": 0
+    },
+    "Country Region": {
+      "dimension_rows": 52,
+      "used_members": 35,
+      "unmatched_rows": 0
+    },
+    "IT Area": {
+      "dimension_rows": 40,
+      "used_members": 38,
+      "unmatched_rows": 0
+    },
+    "Department": {
+      "dimension_rows": 471,
+      "used_members": 410,
+      "unmatched_rows": 0
+    },
+    "Scenario": {
+      "dimension_rows": 5,
+      "used_members": 5,
+      "unmatched_rows": 0
+    }
+  },
+  "region_count": 6,
+  "it_area_count": 5,
+  "business_area_count": 7,
+  "scenario_count": 5,
+  "department_count": 410
+}

@@ -1,0 +1,336 @@
+1
+00:00:00,000 --> 00:00:06,682
+This Power B I sample shows I T spending five point eight five percent above plan.
+
+2
+00:00:06,682 --> 00:00:09,605
+Infrastructure is the clearest area for investigation.
+
+3
+00:00:09,605 --> 00:00:18,792
+This presentation follows the figures from the overall budget gap to regional costs, forecast accuracy, and the accounting checks needed before acting.
+
+4
+00:00:19,042 --> 00:00:24,465
+The business challenge is to monitor I T costs and explain deviations early.
+
+5
+00:00:24,465 --> 00:00:26,968
+Actual expenditure shows what was recorded.
+
+6
+00:00:26,968 --> 00:00:33,226
+The plan is the original budget, while each latest estimate is a separate forecast snapshot.
+
+7
+00:00:33,226 --> 00:00:38,233
+Comparing all three supports budgeting and accountability without adding the scenarios together.
+
+8
+00:00:38,500 --> 00:00:45,190
+The analysis uses Microsoft's public I T Spend Analysis sample, with data credited to obvi Ence.
+
+9
+00:00:45,190 --> 00:00:51,879
+It covers twenty fourteen and contains one hundred sixty six thousand two hundred sixteen fact records.
+
+10
+00:00:51,879 --> 00:00:58,151
+The video combines original Power B I report images with charts recalculated from the model.
+
+11
+00:00:58,417 --> 00:01:03,236
+The Excel source and the P B I X fact totals match.
+
+12
+00:01:03,236 --> 00:01:09,661
+Preparation checks found no null fact fields, no exact duplicate rows, and no unmatched dimension keys.
+
+13
+00:01:09,661 --> 00:01:12,874
+Numeric keys and dates were standardized for analysis.
+
+14
+00:01:12,874 --> 00:01:18,497
+Negative and zero values were retained because deleting them would change the reported costs.
+
+15
+00:01:18,750 --> 00:01:22,984
+The model connects one fact table to seven reporting dimensions.
+
+16
+00:01:22,984 --> 00:01:28,065
+These active relationships are many to one and use single direction filtering.
+
+17
+00:01:28,065 --> 00:01:31,452
+Scenario separates actuals from the plan and forecasts.
+
+18
+00:01:31,452 --> 00:01:38,649
+I T Area and Business Area are different dimensions, even when both contain a label called Infrastructure.
+
+19
+00:01:38,917 --> 00:01:45,327
+The source Amount measure calculates year to date cost and applies a factor of zero point three.
+
+20
+00:01:45,327 --> 00:01:50,605
+This analysis preserves that factor so the results match the Power B I report.
+
+21
+00:01:50,605 --> 00:01:55,507
+Comparing unscaled Excel sums with the report cards would create an avoidable mismatch.
+
+22
+00:01:55,750 --> 00:01:59,084
+Plan variance is actual cost minus planned cost.
+
+23
+00:01:59,084 --> 00:02:02,419
+A positive result therefore means cost above plan.
+
+24
+00:02:02,419 --> 00:02:07,837
+Dividing by the plan gives the percentage variance when the baseline is meaningful.
+
+25
+00:02:07,837 --> 00:02:14,922
+Missing plan records and negative planning adjustments need separate flags before their percentages are used for ranking.
+
+26
+00:02:15,167 --> 00:02:20,131
+Full year actual cost is two hundred fifty seven point five three million dollars.
+
+27
+00:02:20,131 --> 00:02:24,385
+The original plan is two hundred forty three point two nine million.
+
+28
+00:02:24,385 --> 00:02:31,831
+The difference is fourteen point two four million, or five point eight five percent above plan, across the full model scope.
+
+29
+00:02:32,083 --> 00:02:37,745
+The trend view compares cumulative actual spend with the plan and the third latest estimate.
+
+30
+00:02:37,745 --> 00:02:43,785
+Each point includes earlier months, so these lines should not be read as individual monthly spending.
+
+31
+00:02:43,785 --> 00:02:49,447
+By December, the gap to the original plan reaches fourteen point two four million dollars.
+
+32
+00:02:49,708 --> 00:02:56,851
+Functional is the largest I T area by actual cost, at seventy nine point seven two million dollars.
+
+33
+00:02:56,851 --> 00:03:01,613
+B U Support and Infrastructure follow at about seventy five million each.
+
+34
+00:03:01,613 --> 00:03:08,359
+This distribution sets the scale, while the variance comparison shows which large areas are exceeding their budgets.
+
+35
+00:03:08,625 --> 00:03:13,316
+Infrastructure I T area reports seventy four point nine eight million dollars
+
+36
+00:03:13,316 --> 00:03:18,007
+of actual cost against a plan of fifty point six six million.
+
+37
+00:03:18,007 --> 00:03:23,870
+That is twenty four point three two million above plan, or about forty eight percent.
+
+38
+00:03:23,870 --> 00:03:28,170
+The underlying adjustments and subareas deserve review before selecting a response.
+
+39
+00:03:28,417 --> 00:03:32,345
+Infrastructure's variance is larger than the organization's net budget gap.
+
+40
+00:03:32,345 --> 00:03:38,631
+The other I T areas are collectively about ten point zero eight million dollars below plan.
+
+41
+00:03:38,631 --> 00:03:43,345
+These offsets reduce the total variance to fourteen point two four million.
+
+42
+00:03:43,345 --> 00:03:46,488
+A single headline percentage would hide that difference.
+
+43
+00:03:46,750 --> 00:03:52,256
+The United States accounts for about eighty four point four percent of actual expenditure.
+
+44
+00:03:52,256 --> 00:04:00,122
+It is twelve point eight nine million dollars above plan, while Europe is about two point one three million above.
+
+45
+00:04:00,122 --> 00:04:06,415
+Europe has a slightly higher percentage variance, but the United States has the larger financial impact.
+
+46
+00:04:06,667 --> 00:04:11,231
+Canada and Latin America are each about thirteen percent below plan.
+
+47
+00:04:11,231 --> 00:04:14,965
+Australia and New Zealand are about seven percent below.
+
+48
+00:04:14,965 --> 00:04:19,945
+These results could reflect savings or work that moved to another period.
+
+49
+00:04:19,945 --> 00:04:25,339
+Service output and project delivery records are needed before calling the difference underutilization.
+
+50
+00:04:25,583 --> 00:04:32,994
+Labor is the largest actual cost group at one hundred thirty six point six four million dollars.
+
+51
+00:04:32,994 --> 00:04:38,225
+It represents about fifty three point one percent of net actual cost.
+
+52
+00:04:38,225 --> 00:04:41,713
+Depreciation and amortization follow, then hardware and software.
+
+53
+00:04:41,713 --> 00:04:47,380
+Cost concentration identifies where contract and staffing reviews could have the greatest reach.
+
+54
+00:04:47,625 --> 00:04:55,502
+Shared Services records about four hundred thirty seven thousand dollars against a plan of one point zero four eight million.
+
+55
+00:04:55,502 --> 00:04:59,046
+That is fifty eight point three percent below plan.
+
+56
+00:04:59,046 --> 00:05:03,379
+Labor is also below plan, by about two point three percent.
+
+57
+00:05:03,379 --> 00:05:08,892
+Confirm service volumes and allocation rules before treating either result as a repeatable saving.
+
+58
+00:05:09,125 --> 00:05:14,024
+The third latest estimate is two hundred sixty point zero nine million dollars.
+
+59
+00:05:14,024 --> 00:05:20,054
+Actual cost finishes about two point five seven million lower, a difference of roughly one percent.
+
+60
+00:05:20,054 --> 00:05:26,837
+The second estimate is closer to the final actual, so later forecasts should still be checked for error.
+
+61
+00:05:27,083 --> 00:05:34,516
+Networking reports fifteen point one nine million dollars of actual cost against a plan of eight point six three million.
+
+62
+00:05:34,516 --> 00:05:40,091
+The gap is about six point five five million, or seventy five point nine percent.
+
+63
+00:05:40,091 --> 00:05:47,152
+Review approved scope changes and vendor contracts to explain the difference, rather than assuming a cause from the chart.
+
+64
+00:05:47,417 --> 00:05:53,409
+The Administrative cost group has negative planning adjustments and no actual scenario records.
+
+65
+00:05:53,409 --> 00:05:57,096
+Core Infrastructure also has a negative plan total.
+
+66
+00:05:57,096 --> 00:06:01,706
+Africa and Asia have actual records without an original plan.
+
+67
+00:06:01,706 --> 00:06:08,159
+These cases need reconciliation, and ordinary positive budget percentages would give a misleading ranking.
+
+68
+00:06:08,417 --> 00:06:14,236
+The original Power B I report provides trend, cost element, and plan variance pages.
+
+69
+00:06:14,236 --> 00:06:23,380
+In a live review, begin with the same year and cost scope, select a region, then an I T area and subarea.
+
+70
+00:06:23,380 --> 00:06:27,952
+The filters support exploration, while these presentation images show fixed selections.
+
+71
+00:06:28,208 --> 00:06:35,423
+The plan variance page shows about forty four point four percent for the Infrastructure Business Area selection.
+
+72
+00:06:35,423 --> 00:06:40,092
+The Infrastructure I T Area comparison was about forty eight percent.
+
+73
+00:06:40,092 --> 00:06:42,214
+Those figures use different dimensions.
+
+74
+00:06:42,214 --> 00:06:47,731
+Naming the dimension and checking selections prevents the two results from being confused.
+
+75
+00:06:48,000 --> 00:06:55,357
+A repeatable review moves from the overview to a region, then an I T area, subarea, and cost group.
+
+76
+00:06:55,357 --> 00:06:58,068
+Use the month filter to test timing.
+
+77
+00:06:58,068 --> 00:07:06,199
+Keep the measures reusable, sort months by their period number, and reconcile the headline cards after changes to the reporting scope.
+
+78
+00:07:06,458 --> 00:07:11,066
+The budget owner should reconcile Infrastructure adjustments and investigate Networking.
+
+79
+00:07:11,066 --> 00:07:15,673
+Regional owners should start with the United States, then Europe.
+
+80
+00:07:15,673 --> 00:07:20,280
+Service owners should validate below plan spending against delivered work.
+
+81
+00:07:20,280 --> 00:07:27,651
+Finance should track forecast error and budget variance over time, with named owners for each explanation.
+
+82
+00:07:27,917 --> 00:07:37,109
+The organization is five point eight five percent above its annual plan, while actual cost is close to the third latest estimate.
+
+83
+00:07:37,109 --> 00:07:41,287
+The strongest review combines financial impact with detailed scope checks.
+
+84
+00:07:41,287 --> 00:07:48,390
+Follow the major drivers, validate exceptions, and use the same measures to judge the next reporting cycle.
+

@@ -1,0 +1,45 @@
+TableName,ColumnName,PandasDataType
+Business Area,Business Area,string
+Business Area,Business Area ID,Float64
+Cost Element,Cost element name,string
+Cost Element,Cost Element Group,string
+Cost Element,Cost Element Sub Group,string
+Cost Element,Cost Element ID,Float64
+Country Region,Sales Region,string
+Country Region,Country/Region,string
+Country Region,Country/Region ID,Float64
+Date,Date,datetime64[ns]
+Date,Year,Int64
+Date,Period,Int64
+Date,Month,string
+DateTableTemplate_5db4a9d0-37ae-4eb8-b985-081b6a9bccc6,Date,datetime64[ns]
+DateTableTemplate_5db4a9d0-37ae-4eb8-b985-081b6a9bccc6,Year,Int64
+DateTableTemplate_5db4a9d0-37ae-4eb8-b985-081b6a9bccc6,MonthNo,Int64
+DateTableTemplate_5db4a9d0-37ae-4eb8-b985-081b6a9bccc6,Month,string
+DateTableTemplate_5db4a9d0-37ae-4eb8-b985-081b6a9bccc6,QuarterNo,Int64
+DateTableTemplate_5db4a9d0-37ae-4eb8-b985-081b6a9bccc6,Quarter,string
+DateTableTemplate_5db4a9d0-37ae-4eb8-b985-081b6a9bccc6,Day,Int64
+Department,VP,string
+Department,Department,Int64
+Fact,Date,datetime64[ns]
+Fact,Value,Float64
+Fact,Department,Float64
+Fact,Cost Element ID,string
+Fact,Country/Region ID,Float64
+Fact,Business Area ID,Float64
+Fact,IT Sub Area ID,Float64
+Fact,Scenario ID,Float64
+IT Area,IT Area,string
+IT Area,IT Sub Area,string
+IT Area,IT Sub Area ID,Float64
+LocalDateTable_c659a3fc-ad91-4f80-b458-6b22a6d14a66,Date,datetime64[ns]
+LocalDateTable_c659a3fc-ad91-4f80-b458-6b22a6d14a66,Year,Int64
+LocalDateTable_c659a3fc-ad91-4f80-b458-6b22a6d14a66,MonthNo,Int64
+LocalDateTable_c659a3fc-ad91-4f80-b458-6b22a6d14a66,Month,string
+LocalDateTable_c659a3fc-ad91-4f80-b458-6b22a6d14a66,QuarterNo,Int64
+LocalDateTable_c659a3fc-ad91-4f80-b458-6b22a6d14a66,Quarter,string
+LocalDateTable_c659a3fc-ad91-4f80-b458-6b22a6d14a66,Day,Int64
+Range,www.obvience.com,string
+Scenario,Scenario,string
+Scenario,Scenario ID,Float64
+Scenario,ScenarioDescription,string

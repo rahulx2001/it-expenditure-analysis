@@ -1,0 +1,37 @@
+// Extracted original measures. Source: Microsoft IT Spend Analysis sample; obviEnce ©.
+// These are model definitions, not evaluated output. Preserve the original 0.3 scale.
+
+Amount = TOTALYTD(SUM([Value]), 'Date'[Date])*.3
+
+Actual = CALCULATE([Amount], Scenario[ScenarioDescription]="Actual")
+
+LE1 = CALCULATE([Amount], Scenario[ScenarioDescription]="Latest Estimate 1")
+
+LE2 = CALCULATE([Amount], Scenario[ScenarioDescription]="Latest Estimate 2")
+
+LE3 = CALCULATE([Amount], Scenario[ScenarioDescription]="Latest Estimate 3")
+
+Plan = CALCULATE([Amount], Scenario[ScenarioDescription]="Plan")
+
+Var LE1 = [Actual]-[LE1]
+
+Var LE2 = [Actual]-[LE2]
+
+Var LE3 = [Actual]-[LE3]
+
+Var Plan = [Actual]-[Plan]
+
+Var LE1 % = DIVIDE([Var LE1],[LE1], BLANK())
+
+Var LE2 % = DIVIDE([Var LE2],[LE2], BLANK())
+
+Var LE3 % = DIVIDE([Var LE3],[LE3], BLANK())
+
+Var Plan % = DIVIDE([Var Plan],[Plan], BLANK())
+
+Actual/Plan = [Actual]
+
+// Optional diagnostic measures for a rebuilt model, not changes to the original PBIX.
+Plan Record Count = CALCULATE(COUNTROWS(Fact), Scenario[ScenarioDescription] = "Plan")
+Actual Record Count = CALCULATE(COUNTROWS(Fact), Scenario[ScenarioDescription] = "Actual")
+Comparable Plan Variance % = IF([Plan] > 0 && [Plan Record Count] > 0 && [Actual Record Count] > 0, DIVIDE([Actual] - [Plan], [Plan]), BLANK())
